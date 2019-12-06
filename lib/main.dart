@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hire_me/afterlogin.dart';
 import 'loginpage.dart';
 
 void main() => runApp(MyApp());
@@ -46,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: Text("Service Provider"),
                     onPressed: () {
                       setState(() {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)  => UserClass2() ));
+                        Navigator.push(context, MaterialPageRoute(builder: (context)  => UserLoginPage() ));
 
                       });
                     }),
@@ -57,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => UserLoginPage(),
+                            builder: (context) => AfterLogin(),
                           ),
                         );
                       });

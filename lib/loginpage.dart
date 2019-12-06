@@ -1,9 +1,6 @@
-import 'dart:async';
-import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:http/http.dart' as http;
 // import 'package:shared_preferences/shared_preferences.dart';
 
 import 'afterlogin.dart';
@@ -89,16 +86,13 @@ class _UserLoginPageState extends State<UserLoginPage> {
                       margin: EdgeInsets.all(20),
                       child: RaisedButton(
                         child: Text('Login'),
-                        onPressed: () async {
-                          if (_formKey.currentState.validate()) {
-
-                            Navigator.push(
+                        onPressed: () {
+                          Navigator.push(
                               context,
                               MaterialPageRoute(
                                 builder: (BuildContext context) => AfterLogin(),
                               ),
                             );
-                          }
                         },
                       ),
                     ),
