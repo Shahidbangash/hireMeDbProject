@@ -16,7 +16,6 @@ class _AfterLogin extends State<AfterLogin> {
     // TODO: implement build
     return new Scaffold(
       appBar: AppBar(
-        title: Text('benchstaff'),
       ),
       body: Center(),
       drawer: Drawer(

@@ -22,12 +22,13 @@ class _ForgotEmailState extends State<ForgotEmail> {
     // TODO: implement build
     return new Scaffold(
       appBar: AppBar(
-        title: Text('benchstaff'),
       ),
       body: Center(
         child: Column(
           children: <Widget>[
-            Text('www.benchstaff.com/org/'),
+            Container(child: Text("Forgot Password")
+            ,
+            ),
             TextFormField(
               decoration: InputDecoration(hintText: 'email-address'),
               onFieldSubmitted: (value) {},

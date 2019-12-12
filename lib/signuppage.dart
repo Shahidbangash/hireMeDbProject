@@ -39,10 +39,6 @@ class _SignUpPageState extends State<SignUpPage> {
             child: Column(
               children: <Widget>[
                 Container(
-                  child: Text('www.benchstaff.com/' + org),
-                  margin: EdgeInsets.all(10),
-                ),
-                Container(
                   child: TextField(
                     onChanged: (value) {
                       fullName = value;
@@ -98,6 +94,7 @@ class _SignUpPageState extends State<SignUpPage> {
               Text('Already a member?'),
               FlatButton(
                 child: Text('Sign In'),
+                colorBrightness: Brightness.dark,
                 onPressed: () {
                   Navigator.pop(context);
                 },

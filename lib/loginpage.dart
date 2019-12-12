@@ -46,11 +46,6 @@ class _UserLoginPageState extends State<UserLoginPage> {
                   children: <Widget>[
                     Container(
                       margin: EdgeInsets.all(20),
-                      child:
-                          Text('https://benchstaff-dev.herokuapp.com/'),
-                    ),
-                    Container(
-                      margin: EdgeInsets.all(20),
                       child: TextFormField(
                         validator: (value) {
                           bool emailValid =
