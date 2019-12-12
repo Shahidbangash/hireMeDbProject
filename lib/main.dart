@@ -11,10 +11,19 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Hire_Me',
+      
+      initialRoute: '/home' ,
+       routes: {
+        '/home' : (context) => MyHomePage(),
+        '/second' : (context) => UserLoginPage(),
+
+      },
+      
+      title: 'Hire_Me', 
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),

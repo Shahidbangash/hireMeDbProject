@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ForgotEmail extends StatefulWidget {
-  String _teamName;
-
-  ForgotEmail(this._teamName);
+  
 
   @override
   State<StatefulWidget> createState() {
@@ -19,23 +17,31 @@ class _ForgotEmailState extends State<ForgotEmail> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return new Scaffold(
       appBar: AppBar(
       ),
       body: Center(
         child: Column(
           children: <Widget>[
-            Container(child: Text("Forgot Password")
-            ,
+            Container(child: Text("Forgot Password"  )
+            
+            ,margin: EdgeInsets.all(10),
             ),
-            TextFormField(
-              decoration: InputDecoration(hintText: 'email-address'),
-              onFieldSubmitted: (value) {},
+            Container(
+              child: TextFormField(
+                
+                decoration: InputDecoration(hintText: 'email-address'),
+                onFieldSubmitted: (value) {},
+              ),
+              margin: EdgeInsets.all(10),
             ),
-            RaisedButton(
-              child: Text('Submit Request'),
-              onPressed: () {},
+            Container(
+              child: RaisedButton(
+                child: Text('Submit Request'),
+                onPressed: () {},
+              ),
+              margin: EdgeInsets.all(10),
+              height: 29,
             ),
             Row(
               children: <Widget>[

@@ -59,7 +59,7 @@ class _AfterLogin extends State<AfterLogin> {
                 // ...
 //              Navigator.of(context).pushAndRemoveUntil('/loginPage',(Route<dynamic> route)) => false
                 Navigator.of(context).pushNamedAndRemoveUntil(
-                    '/loginPage', (Route<dynamic> route) => false);
+                    '/home', (Route<dynamic> route) => false);
 
                 // Then close the drawer
 //              Navigator.pop(context);
