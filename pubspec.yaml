@@ -20,7 +20,10 @@ dependencies:
   flutter:
     sdk: flutter
   http: ^0.12.0+2
+
+  sqljocky5: ^2.2.1
   cupertino_icons: ^0.1.2
+  mysql1: ^0.17.0+1
 
 dev_dependencies:
   flutter_test:

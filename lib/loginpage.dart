@@ -79,7 +79,7 @@ class _UserLoginPageState extends State<UserLoginPage> {
                     ),
                     Container(
                       margin: EdgeInsets.all(20),
-                      child: RaisedButton(
+                      child:  RaisedButton(
                         child: Text('Login'),
                         onPressed: () {
                           Navigator.push(
